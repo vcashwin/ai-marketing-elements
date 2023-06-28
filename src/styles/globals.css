@@ -42,12 +42,38 @@
   }
 }
 
+@keyframes rotateImage {
+  0% {
+    transform: translateX(150%) rotate(0deg);
+    opacity: 0;
+  }
+
+  15% {
+    transform: translateX(30%) rotate(-10deg);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateX(30%) rotate(-10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(150%) rotate(0deg);
+    opacity: 1;
+  }
+}
+
 .animate-slider-left {
   animation: slideFadeLeft 6s linear forwards;
 }
 
 .animate-slider-right {
   animation: slideFadeRight 40s linear forwards;
+}
+
+.animate-rotate-image {
+  animation: rotateImage 10s linear forwards;
 }
 
 * {

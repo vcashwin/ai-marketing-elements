@@ -1,5 +1,5 @@
 import TextSlider from "@/components/TextSlider";
-import VideoSlider from "@/components/VideoSlider";
+import ImageSlider from "@/components/ImageSlider";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
           AI Marketing Elements
         </h1>
         <TextSlider />
-        <VideoSlider />
+        <ImageSlider />
       </main>
     </>
   );
