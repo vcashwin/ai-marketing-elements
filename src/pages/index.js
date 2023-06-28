@@ -1,4 +1,5 @@
-import Slider from "@/components/Slider";
+import TextSlider from "@/components/TextSlider";
+import VideoSlider from "@/components/VideoSlider";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
       <main className="flex flex-col items-center">
         <h1 className="text-4xl font-bold mt-10 bg-black text-white rounded-full px-20 py-10">
           AI Marketing Elements
-          <Slider />
         </h1>
+        <TextSlider />
+        <VideoSlider />
       </main>
     </>
   );

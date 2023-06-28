@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slideFade {
+@keyframes slideFadeLeft {
   0% {
     transform: translateX(-100%);
     opacity: 0;
@@ -22,8 +22,32 @@
   }
 }
 
-.animate-slider {
-  animation: slideFade 6s linear forwards;
+@keyframes slideFadeRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  1% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  99% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slider-left {
+  animation: slideFadeLeft 6s linear forwards;
+}
+
+.animate-slider-right {
+  animation: slideFadeRight 40s linear forwards;
 }
 
 * {

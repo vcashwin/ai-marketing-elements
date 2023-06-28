@@ -4,14 +4,14 @@ import * as React from "react";
  * A Slider element that slides in from the bottom of the screen at random intervals sand then slides out
  * Displays the purchase of a new user of the product to drive the current user towards purchasing.
  */
-export default function Slider() {
+export default function TextSlider() {
   const divRef = React.useRef(null);
 
   const playAnimation = () => {
     const slidingDiv = divRef.current;
-    slidingDiv.classList.remove("animate-slider");
+    slidingDiv.classList.remove("animate-slider-left");
     void slidingDiv.offsetWidth; // Trigger reflow to restart animation
-    slidingDiv.classList.add("animate-slider");
+    slidingDiv.classList.add("animate-slider-left");
   };
 
   const getRandomInterval = (min, max) => {
@@ -45,7 +45,7 @@ export default function Slider() {
         <div className="pointer-events-none fixed inset-x-0 bottom-0 px-2 pb-5">
           <div
             ref={divRef}
-            className="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 rounded-r-xl sm:py-3 sm:pl-4 sm:pr-3.5 animate-slider max-w-lg"
+            className="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 rounded-r-xl sm:py-3 sm:pl-4 sm:pr-3.5 animate-slider-left max-w-lg"
           >
             <p className="text-sm leading-6 text-white font-light">
               <a href="#">
