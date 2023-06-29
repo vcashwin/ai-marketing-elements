@@ -42,7 +42,7 @@ export default function TextSlider() {
   return (
     <div className="pt-3">
       <div className="mx-auto max-w-lg px-6">
-        <div className="pointer-events-none fixed inset-x-0 bottom-0 px-2 pb-5">
+        <div className="pointer-events-none fixed inset-x-0 top-0 px-2 pt-5">
           <div
             ref={divRef}
             className="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 rounded-r-xl sm:py-3 sm:pl-4 sm:pr-3.5 animate-slider-left max-w-lg"
