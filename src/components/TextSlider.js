@@ -23,7 +23,7 @@ export default function TextSlider() {
 
     const startRandomAnimation = () => {
       playAnimation();
-      const minInterval = 6000; // Minimum interval in milliseconds
+      const minInterval = 7000; // Minimum interval in milliseconds
       const maxInterval = 30000; // Maximum interval in milliseconds
       const interval = getRandomInterval(minInterval, maxInterval);
       animationTimeout = setTimeout(startRandomAnimation, interval);
@@ -42,7 +42,7 @@ export default function TextSlider() {
   return (
     <div className="pt-3">
       <div className="mx-auto max-w-lg px-6">
-        <div className="pointer-events-none fixed inset-x-0 sm:top-0 bottom-0 px-2 sm:pt-5 sm:pb-0 pb-5">
+        <div className="pointer-events-none fixed inset-x-0 bottom-0 px-2 pb-5">
           <div
             ref={divRef}
             className="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 rounded-r-xl sm:py-3 sm:pl-4 sm:pr-3.5 animate-slider-left max-w-lg"

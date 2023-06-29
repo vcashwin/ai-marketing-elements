@@ -34,11 +34,11 @@ function LandingPage() {
             aria-label="Global"
           >
             <div className="flex">
-              <a href="#" className="flex items-center gap-4 -m-1.5 p-1.5">
+              <a href="#" className="flex items-center gap-2 -m-1.5 p-1.5">
                 <span className="font-grifter text-xl lg:text-3xl">
                   AssembleGrowth
                 </span>
-                <Image className="h-16 w-auto" src={Logo} alt="" />
+                <Image className="h-10 w-auto" src={Logo} alt="" />
               </a>
             </div>
           </nav>
@@ -339,6 +339,14 @@ function LandingPage() {
             </div>
           </div>
         </div>
+
+        <iframe
+          src="https://calendly.com/assemblegrowth/15min"
+          title="Embedded Webpage"
+          width="100%"
+          height="700px"
+          className="pointer-events-auto mb-12"
+        />
 
         <footer className="mx-10 border-t border-gray-900/10 bg-white">
           <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
