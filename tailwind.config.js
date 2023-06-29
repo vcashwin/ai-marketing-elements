@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
+        grifter: ["var(--font-grifter)", ...defaultTheme.fontFamily.sans],
       },
     },
   },

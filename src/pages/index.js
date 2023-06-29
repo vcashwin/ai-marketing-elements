@@ -1,6 +1,10 @@
+import Head from "next/head";
+import Image from "next/image";
+
+import Logo from "../assets/logo.png";
+
 import TextSlider from "@/components/TextSlider";
 import ImageSlider from "@/components/ImageSlider";
-import Head from "next/head";
 
 export default function Home() {
   return (
@@ -30,13 +34,11 @@ function LandingPage() {
             aria-label="Global"
           >
             <div className="flex">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+              <a href="#" className="flex items-center gap-4 -m-1.5 p-1.5">
+                <span className="font-grifter text-xl lg:text-3xl">
+                  AssembleGrowth
+                </span>
+                <Image className="h-16 w-auto" src={Logo} alt="" />
               </a>
             </div>
           </nav>
