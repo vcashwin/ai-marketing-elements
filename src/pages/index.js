@@ -104,7 +104,7 @@ function LandingPage() {
         </div>
 
         <div className="py-24 sm:m-6 sm:rounded-xl sm:py-32">
-          <div className="mx-auto max-w-7xl rounded-xl bg-gray-900 px-6 py-32 lg:px-10">
+          <div className="mx-auto max-w-7xl sm:rounded-xl bg-gray-900 px-6 py-32 lg:px-10">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base font-semibold leading-7 text-indigo-400">
                 Deploy faster
